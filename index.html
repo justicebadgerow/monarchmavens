@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Monarch Mavens</title>
+<meta name="description" content="Monarch Mavens is a mentorship and service club for freshman and sophomore girls at Northside High School in Jacksonville, NC, founded by Jessie Olan. Book drive, community projects, and help for local schools and organizations.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="img/logo-icon.png" alt="" width="40" height="39">Monarch Mavens</a>
+    <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="links">Menu</button>
+    <div class="links" id="links">
+      <a href="#club">The Club</a>
+      <a href="#book-drive">Book Drive</a>
+      <a href="#projects">Projects</a>
+      <a href="#get-involved">Get Involved</a>
+      <a href="jessie.html">Meet Jessie</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <div class="kicker">Northside High School · Jacksonville, NC</div>
+      <h1 class="hero-logo"><img src="img/logo.png" alt="Monarch Mavens" width="374" height="520"></h1>
+      <p class="roles">Mentorship and service for freshman and sophomore girls. Founded by <b>Jessie Olan</b>, Class of 2028.</p>
+      <p class="intro">When Jessie Olan saw Northside’s clubs dying out and almost no freshman girls joining, she started a group to show them the way, just like her older brother once did for her. Today Monarch Mavens is 53 girls strong.</p>
+      <div class="btns">
+        <a class="btn solid form-link" href="#get-involved">Request our help</a>
+        <a class="btn ghost" href="#book-drive">Support the Book Drive</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="img/hero.jpg" alt="Jessie Olan, founder of Monarch Mavens, smiling in a Northside Monarchs shirt">
+      <div class="badge"><b>Jessie Olan</b>Founder &amp; President</div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="stats">
+      <div class="stat"><b>53</b><span>Monarch Mavens members, up from 32</span></div>
+      <div class="stat"><b id="stat-books">600</b><span>Books collected toward 1,000</span></div>
+      <div class="stat"><b>158</b><span>Books already in kids’ hands</span></div>
+      <div class="stat"><b>40+</b><span>Volunteer hours at the CHEW pantry</span></div>
+    </div>
+  </div>
+</header>
+
+<!-- BOOK DRIVE -->
+<section class="drive" id="book-drive">
+  <div class="wrap">
+    <div class="kicker" id="drive-kicker">Happening now · Ends December 18, 2026</div>
+    <h2>The 1,000 Book Drive</h2>
+    <p class="lede">Monarch Mavens is collecting children’s books for students in Onslow County school CHEW programs. Every book goes home with a child, along with comprehension questions handwritten by a Maven.</p>
+
+    <div class="drive-grid">
+      <div>
+        <div class="meter" role="group" aria-label="Book drive progress">
+          <div class="meter-top"><b><span id="books-now">600</span> books</b><span>Goal: 1,000</span></div>
+          <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="1000" aria-valuenow="600" id="books-bar"><i id="books-fill" style="width:60%"></i></div>
+          <small><span id="books-left">400</span> books to go · Drive ends December 18, 2026</small>
+        </div>
+
+        <ul class="facts">
+          <li><b>88</b><span>books already given to students at 3 local elementary schools through their CHEW programs</span></li>
+          <li><b>70</b><span>free books handed out at our school’s community Trunk or Treat</span></li>
+          <li><b>4–5</b><span>comprehension questions handwritten by a Maven inside every book</span></li>
+        </ul>
+
+        <div style="margin-top:26px">
+          <p>Students in the CHEW program take home a weekend snack bag. Now they take home a book too. Because every book carries questions written just for it, we’re sharing more than books. We’re building reading comprehension and critical thinking.</p>
+          <p><b>Businesses and organizations:</b> you can donate books, sponsor a box of books, or host a collection bin. Email <a href="mailto:jessieolan88@gmail.com">jessieolan88@gmail.com</a> and Jessie will pick the books up.</p>
+        </div>
+        <div class="btns">
+          <a class="btn solid" href="#contact">Donate books</a>
+          <a class="btn ghost" href="#pickleball">Play in the pickleball tournament</a>
+        </div>
+
+        <div class="event" id="pickleball">
+          <h3 id="pb-title">Pickleball Tournament · Saturday, December 5, 2026</h3>
+          <p id="pb-text">Anyone is welcome. All ages are encouraged to play, and there’s no entry fee. To play, bring <b>one book or one canned good</b>.</p>
+          <p id="pb-waiver"><b>Every player needs to sign a waiver.</b> To sign up, email Jessie at <a href="mailto:jessieolan88@gmail.com?subject=Pickleball%20tournament%20sign-up">jessieolan88@gmail.com</a> and she’ll send the waiver over.</p>
+          <p id="pb-when"><b>10 AM – 2 PM · The Commons tennis courts</b></p>
+        </div>
+      </div>
+
+      <div class="photo-pair">
+        <figure>
+          <img src="img/books-cfe.jpg" alt="Jessie and two staff members holding donated children's books at Carolina Forest Elementary">
+          <figcaption>Delivering books to Carolina Forest Elementary</figcaption>
+        </figure>
+        <figure>
+          <img src="img/trunk-jessie.jpg" alt="A book-themed Trunk or Treat car with Jessie holding If You Give a Mouse a Cookie">
+          <figcaption>“Trick or treat, find me something good to read”: 70 free books at Trunk or Treat</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THE CLUB -->
+<section class="mavens" id="club">
+  <div class="wrap">
+    <div class="kicker">The club</div>
+    <h2>What is Monarch Mavens?</h2>
+    <p class="lede">A mentorship and service club for freshman and sophomore girls at Northside High School. It’s easier to find your seat at the table when you walk in with a mentor and a friend.</p>
+
+    <div class="story">
+      <h3>How it started</h3>
+      <p>Jessie Olan had an amazing guide in high school: her older brother, his class valedictorian, who pulled her into club after club. “Come join this one, do this one, try this one.” She soon realized most students around her never got that push and didn’t even know these opportunities existed.</p>
+      <p>By her sophomore year, Northside’s clubs were dying out, with almost no one left in them, and she knew she couldn’t revive them on her own. So she started a group for the incoming freshman girls to show them what her brother had shown her. It worked. Her junior year, she opened it up to freshman and sophomore girls, and Monarch Mavens grew into the program it is today, from 32 members to 53.</p>
+    </div>
+
+    <div class="mav-grid">
+      <div>
+        <p>Freshman year comes with a flood of new opportunities, and it’s easy to feel overwhelmed. Monarch Mavens helps girls make the jump from middle school to high school. We join clubs together, volunteer together and build college-ready résumés together.</p>
+        <p style="margin-top:14px">We work closely with our school’s CHEW program and push our members toward Northside’s academic teams like Science Olympiad, Odyssey of the Mind and Battle of the Books. With the Mavens’ help, Northside’s Science Olympiad team grew from <b>4</b> competitors to <b>16</b>.</p>
+        <div class="stats">
+          <div class="stat"><b>53</b><span>members, up from 32</span></div>
+          <div class="stat"><b>40+</b><span>volunteer hours at the CHEW pantry</span></div>
+          <div class="stat"><b>4→16</b><span>Science Olympiad competitors</span></div>
+        </div>
+        <p style="margin-top:18px;color:var(--muted);font-size:15px">Founder &amp; President: Jessie Olan · Advisor: Ms. Falkowsky</p>
+      </div>
+      <figure style="margin:0">
+        <img src="img/speaker.jpg" alt="A guest speaker presenting to Monarch Mavens members in a classroom">
+        <figcaption>A guest speaker at a Monarch Mavens meeting</figcaption>
+      </figure>
+    </div>
+
+    <div class="pillars">
+      <div class="pillar"><h3>Mentorship</h3><p>We talk about GPA, time management, scholarships and career planning, and how to build an application that stands out.</p></div>
+      <div class="pillar"><h3>Service</h3><p>Drives, holiday projects and volunteer days that support CHEW students, teachers, nursing home residents and families in our community.</p></div>
+      <div class="pillar"><h3>Growth</h3><p>Each member writes a letter to herself at the start of the year and reads it at the end to see how far she’s come.</p></div>
+    </div>
+
+    <div class="speakers">
+      <h3>Guest speakers we’ve hosted</h3>
+      <ul>
+        <li><b>Catherine Lee</b><span>Pageant queen and Miss North Carolina contestant</span></li>
+        <li><b>Michelle Chadwick</b><span>Onslow County Schools STEM Coordinator</span></li>
+        <li><b>Northside alumni</b><span>Graduates who earned full rides to NC State through scholarships</span></li>
+        <li><b>Senior panel</b><span>Six top seniors who shared what they’d do differently, so younger girls could learn from their mistakes</span></li>
+      </ul>
+    </div>
+
+    <div class="join" id="join">
+      <div>
+        <h3>How to join</h3>
+        <ol>
+          <li>Be a freshman or sophomore girl at Northside High School.</li>
+          <li>Come to a meeting. We meet weekly during Power Hour.</li>
+          <li>Attend regularly, and let the advisor know if you can’t make it.</li>
+        </ol>
+        <div class="btns"><a class="btn solid" href="#contact">Ask about joining</a></div>
+      </div>
+      <div class="who">
+        <b>Who it’s for</b>
+        Girls who want to get more involved at school, connect with more opportunities and leave high school with a well-rounded college application.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="wrap">
+    <div class="kicker">Projects</div>
+    <h2>What we’ve done</h2>
+    <p class="lede">A record of Monarch Mavens projects and service, with more on the way.</p>
+
+    <div class="timeline">
+      <article class="proj">
+        <img src="img/books-cfe.jpg" alt="Books delivered to Carolina Forest Elementary">
+        <div class="body"><div class="tag">Literacy · 2026</div><h3>1,000 Book Drive</h3><p>600 books collected and 88 delivered to 3 elementary schools’ CHEW programs, each with handwritten comprehension questions.</p></div>
+      </article>
+      <article class="proj">
+        <img src="img/trunk.jpg" alt="Book-themed Trunk or Treat car with crates of books">
+        <div class="body"><div class="tag">Literacy · Fall 2026</div><h3>Trunk or Treat books</h3><p>An “If You Give a Mouse a Cookie” trunk that gave 70 free books to kids in our community.</p></div>
+      </article>
+      <article class="proj">
+        <img src="img/valentine.jpg" alt="Valentine's chocolate boxes labeled from Monarch Mavens">
+        <div class="body"><div class="tag">CHEW · Valentine’s Day</div><h3>Valentine’s candy for CHEW</h3><p>We put Valentine’s candy in Northside’s CHEW bags so every student had a valentine, either for someone special or just for themselves.</p></div>
+      </article>
+      <article class="proj">
+        <img src="img/cards.jpg" alt="Members making handmade cards at a table">
+        <div class="body"><div class="tag">Seniors · Holidays</div><h3>Nursing home cards</h3><p>Handmade Thanksgiving, Christmas and Valentine’s Day cards for local nursing home residents.</p></div>
+      </article>
+      <article class="proj">
+        <img src="img/baskets.jpg" alt="Three teacher appreciation snack baskets with notes from Monarch Mavens">
+        <div class="body"><div class="tag">Teachers</div><h3>Teacher appreciation baskets</h3><p>Snack baskets for the teachers’ lounge to thank the staff who help our school run.</p></div>
+      </article>
+      <article class="proj">
+        <img src="img/prom.jpg" alt="Five Monarch Mavens holding flower garlands while decorating">
+        <div class="body"><div class="tag">School</div><h3>Prom setup</h3><p>Mavens helped decorate and set up for Northside’s prom.</p></div>
+      </article>
+    </div>
+
+    <div class="more">
+      <h3>More service</h3>
+      <ul>
+        <li>Easter baskets for every student in Northside’s CHEW program</li>
+        <li>Adopted an Angel Tree angel at Christmas, with every member contributing</li>
+        <li>40+ volunteer hours together at the CHEW pantry</li>
+        <li>Recruited new members at Navigation Night</li>
+        <li>Gave tours to incoming students at new-student orientation</li>
+        <li>Monarch Mentoras: college and career guidance in Spanish for ESL students every 3 weeks</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- GET INVOLVED -->
+<section id="get-involved" style="padding-top:0">
+  <div class="wrap">
+    <div class="kicker">Get involved</div>
+    <h2>Need a hand? We’d love to help.</h2>
+    <p class="lede">Schools, organizations and businesses in our community can ask Monarch Mavens for volunteers, invite us to an event, or come speak to our girls.</p>
+
+    <div class="request">
+      <div>
+        <h3>Request our help</h3>
+        <p>Tell us who you are, what you need, when it is and how many volunteers would help. Jessie will get back to you.</p>
+        <div class="btns">
+          <a class="btn light form-link" href="mailto:jessieolan88@gmail.com?subject=Monarch%20Mavens%20help%20request" target="_blank" rel="noopener">Fill out the request form</a>
+        </div>
+        <p style="font-size:15px">Or email <a href="mailto:jessieolan88@gmail.com">jessieolan88@gmail.com</a></p>
+      </div>
+      <div class="ideas">
+        <b>We can help with things like</b>
+        <ul>
+          <li>Elementary school field days and fun nights</li>
+          <li>Reading events and book giveaways</li>
+          <li>School and community event setup</li>
+          <li>Food pantry and donation drives</li>
+          <li>Holiday projects for students and seniors</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="help-grid">
+      <div class="help feature">
+        <div class="num">Most needed · by Dec 18</div>
+        <h3>Donate books</h3>
+        <p>Help us reach 1,000 books for students in CHEW programs. Children’s and early-reader books are perfect.</p>
+        <ul><li>Donate new or gently used books</li><li>Sponsor a box of books</li><li>Host a collection bin at your business</li></ul>
+        <p><b>Free pickup:</b> email Jessie at <a href="mailto:jessieolan88@gmail.com">jessieolan88@gmail.com</a> and she’ll come pick up your books.</p>
+      </div>
+      <div class="help">
+        <div class="num">Year-round</div>
+        <h3>Become a guest speaker</h3>
+        <p>Share your career, college path or story with our members. We’ve hosted a Miss NC contestant, the county STEM coordinator and scholarship-winning alumni.</p>
+        <div class="btns" style="margin-top:16px"><a class="btn ghost form-link" href="mailto:jessieolan88@gmail.com?subject=Guest%20speaker%20for%20Monarch%20Mavens" target="_blank" rel="noopener">Apply to speak</a></div>
+      </div>
+      <div class="help">
+        <div class="num">Every Christmas</div>
+        <h3>Sponsor our Angel Tree angel</h3>
+        <p>Each year the Mavens adopt a child from the Angel Tree. Businesses can help by donating clothing, gift cards or gifts for our angel.</p>
+      </div>
+      <div class="help">
+        <div class="num">December 5</div>
+        <h3>Play, sponsor or spread the word</h3>
+        <p>Join the pickleball tournament on Dec 5 (all ages welcome, entry is one book or canned good), sponsor it, or share the book drive with your network. Email Jessie to get the player waiver.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOUNDER -->
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="founder">
+      <img src="img/nchsaa.jpg" alt="Jessie Olan, founder of Monarch Mavens">
+      <div>
+        <div class="kicker">Meet the founder</div>
+        <h2>Jessie Olan</h2>
+        <p>Jessie Olan started Monarch Mavens her sophomore year at Northside High School to give younger girls the same guidance her older brother gave her. Today she leads 53 Mavens, runs the 1,000 Book Drive, and brings in guest speakers to help younger girls plan for college and careers.</p>
+        <div class="btns"><a class="btn solid" href="jessie.html">Read Jessie’s story</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="kicker">Contact</div>
+    <h2>Let’s work together</h2>
+    <p class="lede">For help requests, book donations, sponsorships, speaking or joining the club, reach out and we’ll get back to you.</p>
+    <div class="contact-grid">
+      <div class="contact-card"><small>Email</small><a href="mailto:jessieolan88@gmail.com">jessieolan88@gmail.com</a></div>
+      <div class="contact-card"><small>Donating books?</small>Email Jessie and she’ll pick them up from you.</div>
+      <div class="contact-card"><small>School</small>Northside High School<br>Jacksonville, NC</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Monarch Mavens · Northside High School · Founded by Jessie Olan</span>
+  </div>
+</footer>
+
+<script>
+// ===== EASY EDITS =====
+// Update BOOKS as books come in. The bar, stats and "books to go" all follow.
+const BOOKS = 600, GOAL = 1000;
+// Paste the Google Form link between the quotes. Until then, the buttons open an email.
+const FORM_URL = "";
+// After these dates the page switches to "thank you" wording by itself.
+const PICKLEBALL_END = new Date('2026-12-05T23:59:59');
+const DRIVE_END = new Date('2026-12-18T23:59:59');
+// ======================
+(function(){
+  const $ = id => document.getElementById(id);
+  const fmt = n => n.toLocaleString('en-US');
+  const pct = Math.min(100, Math.round(BOOKS / GOAL * 100));
+  $('books-now').textContent = fmt(BOOKS);
+  $('stat-books').textContent = fmt(BOOKS);
+  $('books-left').textContent = fmt(Math.max(0, GOAL - BOOKS));
+  $('books-fill').style.width = pct + '%';
+  $('books-bar').setAttribute('aria-valuenow', BOOKS);
+  if (FORM_URL) document.querySelectorAll('.form-link').forEach(a => { a.href = FORM_URL; a.target = '_blank'; a.rel = 'noopener'; });
+  const now = new Date();
+  if (now > PICKLEBALL_END) {
+    $('pb-title').textContent = 'Thank you for playing! · Pickleball Tournament, December 5';
+    $('pb-text').textContent = 'Thanks to everyone who came out and brought a book or canned good. Every entry went straight to the drive.';
+    $('pb-when').style.display = 'none';
+    $('pb-waiver').style.display = 'none';
+  }
+  if (now > DRIVE_END) {
+    $('drive-kicker').textContent = 'Drive complete · Thank you!';
+    $('books-left').parentElement.textContent = 'The drive ended December 18, 2026. Thank you to everyone who donated!';
+  }
+  const btn = $('menu-btn'), links = $('links');
+  btn.addEventListener('click', () => { const open = links.classList.toggle('open'); btn.setAttribute('aria-expanded', open); });
+  links.addEventListener('click', e => { if (e.target.tagName === 'A') { links.classList.remove('open'); btn.setAttribute('aria-expanded', false); } });
+})();
+</script>
+</body>
+</html>
