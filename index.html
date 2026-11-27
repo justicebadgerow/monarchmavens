@@ -48,7 +48,7 @@
   <div class="wrap">
     <div class="stats">
       <div class="stat"><b>53</b><span>Monarch Mavens members, up from 32</span></div>
-      <div class="stat"><b id="stat-books">600</b><span>Books collected toward 1,000</span></div>
+      <div class="stat"><b id="stat-books">1,000</b><span>Books collected · goal reached!</span></div>
       <div class="stat"><b>158</b><span>Books already in kids’ hands</span></div>
       <div class="stat"><b>40+</b><span>Volunteer hours at the CHEW pantry</span></div>
     </div>
@@ -58,16 +58,16 @@
 <!-- BOOK DRIVE -->
 <section class="drive" id="book-drive">
   <div class="wrap">
-    <div class="kicker" id="drive-kicker">Happening now · Ends December 18, 2026</div>
+    <div class="kicker" id="drive-kicker">Goal reached! · Drive runs through December 18, 2026</div>
     <h2>The 1,000 Book Drive</h2>
     <p class="lede">Monarch Mavens is collecting children’s books for students in Onslow County school CHEW programs. Every book goes home with a child, along with comprehension questions handwritten by a Maven.</p>
 
     <div class="drive-grid">
       <div>
         <div class="meter" role="group" aria-label="Book drive progress">
-          <div class="meter-top"><b><span id="books-now">600</span> books</b><span>Goal: 1,000</span></div>
-          <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="1000" aria-valuenow="600" id="books-bar"><i id="books-fill" style="width:60%"></i></div>
-          <small><span id="books-left">400</span> books to go · Drive ends December 18, 2026</small>
+          <div class="meter-top"><b><span id="books-now">1,000</span> books</b><span>Goal: 1,000</span></div>
+          <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="1000" aria-valuenow="1000" id="books-bar"><i id="books-fill" style="width:100%"></i></div>
+          <small><span id="books-left">0</span> books to go · We hit 1,000! Thank you to everyone who donated.</small>
         </div>
 
         <ul class="facts">
@@ -181,7 +181,7 @@
     <div class="timeline">
       <article class="proj">
         <img src="img/books-cfe.jpg" alt="Books delivered to Carolina Forest Elementary">
-        <div class="body"><div class="tag">Literacy · 2026</div><h3>1,000 Book Drive</h3><p>600 books collected and 88 delivered to 3 elementary schools’ CHEW programs, each with handwritten comprehension questions.</p></div>
+        <div class="body"><div class="tag">Literacy · 2026</div><h3>1,000 Book Drive</h3><p>1,000 books collected and 88 delivered to 3 elementary schools’ CHEW programs, each with handwritten comprehension questions.</p></div>
       </article>
       <article class="proj">
         <img src="img/trunk.jpg" alt="Book-themed Trunk or Treat car with crates of books">
@@ -251,7 +251,7 @@
       <div class="help feature">
         <div class="num">Most needed · by Dec 18</div>
         <h3>Donate books</h3>
-        <p>Help us reach 1,000 books for students in CHEW programs. Children’s and early-reader books are perfect.</p>
+        <p>We reached our goal of 1,000 books! Donations are still welcome through December 18 so even more students in CHEW programs get a book. Children’s and early-reader books are perfect.</p>
         <ul><li>Donate new or gently used books</li><li>Sponsor a box of books</li><li>Host a collection bin at your business</li></ul>
         <p><b>Free pickup:</b> email Jessie at <a href="mailto:jessieolan88@gmail.com">jessieolan88@gmail.com</a> and she’ll come pick up your books.</p>
       </div>
@@ -313,7 +313,7 @@
 <script>
 // ===== EASY EDITS =====
 // Update BOOKS as books come in. The bar, stats and "books to go" all follow.
-const BOOKS = 600, GOAL = 1000;
+const BOOKS = 1000, GOAL = 1000;
 // Paste the Google Form link between the quotes. Until then, the buttons open an email.
 const FORM_URL = "";
 // After these dates the page switches to "thank you" wording by itself.
@@ -336,6 +336,10 @@ const DRIVE_END = new Date('2026-12-18T23:59:59');
     $('pb-text').textContent = 'Thanks to everyone who came out and brought a book or canned good. Every entry went straight to the drive.';
     $('pb-when').style.display = 'none';
     $('pb-waiver').style.display = 'none';
+  }
+  if (BOOKS >= GOAL && now <= DRIVE_END) {
+    $('drive-kicker').textContent = 'Goal reached! · Drive runs through December 18, 2026';
+    $('books-left').parentElement.textContent = 'We hit ' + fmt(GOAL) + ' books! Thank you to everyone who donated.';
   }
   if (now > DRIVE_END) {
     $('drive-kicker').textContent = 'Drive complete · Thank you!';
